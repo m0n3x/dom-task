@@ -14,16 +14,9 @@ const setUrlParameter = (x, n) => {
   return href.toString()
 }
 
-// function setUrlParameter(hashParameterName, hashParameterValue) {
-//   href.search = window.location.hash; 
-// }
-
 // console.log(setUrlParameter("x", 12));
 // console.log(setUrlParameter("y", 13));
 // console.log(setUrlParameter("x", 10));
-
-// setUrlParameter("y", 18) \\ localhost:8000?x=12&y=18
-// setUrlParameter("x", 2) \\ localhost:8000?x=2&y=18
 
 //3.
 function setUrlHashParameter(hashParameterName, hashParameterValue) {
@@ -32,9 +25,9 @@ function setUrlHashParameter(hashParameterName, hashParameterValue) {
   window.location.hash = href.searchParams;
 }
 
-// setUrlHashParameter("x", 12)\\ localhost: 8000# x = 12
-// setUrlHashParameter("y", 18)\\ localhost: 8000# x = 12 & y = 18
-// setUrlHashParameter("x", 2)\\ localhost: 8000# x = 2 & y = 18
+// setUrlHashParameter("x", 12)\\ localhost:8000#x=12
+// setUrlHashParameter("y", 18)\\ localhost:8000#x=12&y=18
+// setUrlHashParameter("x", 2)\\ localhost:8000#x=2&y=18
 
 //4.
 const previousPage = document.querySelector('.previous');
